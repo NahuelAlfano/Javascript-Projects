@@ -1,0 +1,170 @@
+
+/* GLOBAL STYLES */
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 20vw;
+    min-width: 100px;
+    border-radius: 50%;
+}
+
+
+main{
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 1fr;
+}
+
+footer{
+    display: absolute;
+    bottom: 0;
+    height: 15vh;
+    background-color: black;
+}
+
+h4{
+    font-size: 3rem;
+    color:#81BD69
+}
+
+h5{
+    font-size: 1rem;
+    color: #167683
+}
+
+p{
+    line-height: 35px;
+}
+
+
+/* TITLE STYLES */
+
+.container{
+    height: 20vh;
+    background: linear-gradient(-90deg, #E8D9EF 0%, #A569BD 100%);
+    margin-bottom: 20px;
+}
+
+.underline{
+    height: 100%;
+    width: 30vw;
+    border: 8px transparent;
+    border-image: linear-gradient(90deg, white 0%, black 100%) 1;
+    border-style: none inset inset none;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 5vh;
+}
+
+
+/*  MAIN STYLES  */
+
+.img-container{
+    display: grid;
+    place-items: end;
+    min-width: 100px;
+    margin-top: 50px;
+    margin-right: 50px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.author{
+    display:grid;
+    place-items: start;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.name{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 3px;
+}
+
+.description{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.box{
+    width: 70%;
+    margin-top: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    box-shadow: 2px 5px 20px 2px black;
+}
+
+
+
+/* BUTTONS */
+
+.btn-container{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-top: 30px;
+
+}
+
+.btn{
+    background: none;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.btn:hover{
+    background-color: #A569BD ;
+}
+
+@media screen and (max-width: 800px), screen and (max-height: 400){
+
+    header{
+        margin-top: 10px;
+        min-height: 150px;
+    }
+
+    footer{
+        min-height: 100px;
+        margin-top: 100px
+    }
+    .container{
+        background: none;
+    }
+    .underline{
+        border-image: linear-gradient(90deg, #E8D9EF 0%, #A569BD 100%) 1;
+        padding-right: 20px;
+    }
+    .title{
+        padding-top: 0;
+    }
+    .img-container{
+        margin-top: 0
+    }
+
+    .description{   
+        display:grid;
+        place-items: center;
+        margin-top:10px;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .underline{
+        border-right: none;
+    }
+}
