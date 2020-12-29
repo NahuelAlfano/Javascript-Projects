@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px
+}
+
+.game-container{
+    width: 500px;
+    height: 730px;
+    position: absolute;
+}
+
+.sky{
+    background-color: rgb(88, 88, 248);
+    width: 500px;
+    height: 550px;
+    position: absolute;
+}
+
+.ground{
+    background-color: rgba(133, 23, 23, 0.623);
+    width: 500px;
+    height: 180px;
+    position: absolute;
+    top: 550px;
+}
+
+.bird{
+    background-color: rgb(173, 173, 28);
+    width: 50px;
+    height: 30px;
+    position: absolute;
+}
