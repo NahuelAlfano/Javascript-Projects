@@ -14,10 +14,11 @@
     background-color: blue;
     position: relative;
     top: 270px;
+    left: 30px;
 }
 
 .jumpAnimation{
-    animation: jump 1s;
+    animation: jump 700ms;
 }
 
 .block{
@@ -27,12 +28,12 @@
     position: relative;
     top: 240px;
     left: 480px;
-    animation: slide 2s;
+    animation: slide 2s infinite;
 }
 
 @keyframes slide{
     0%{left: 480px;}
-    100%{left: -50px;}
+    100%{left: -70px;}
 }
 
 @keyframes jump{
