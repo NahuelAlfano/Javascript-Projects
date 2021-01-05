@@ -145,5 +145,5 @@ document.addEventListener('DOMContentLoaded', () =>{
     }
     
     createObstacle()
-
+    console.log('Nahuel Alfano.')
 })
