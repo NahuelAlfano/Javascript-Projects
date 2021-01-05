@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.character{
+    width: 20px;
+    height: 30px;
+    background-color: blue;
+    position: relative;
+    top: 270px;
+}
+
+.jumpAnimation{
+    animation: jump 1s;
+}
+
+.block{
+    width: 20px;
+    height: 30px;
+    background-color: red;
+    position: relative;
+    top: 240px;
+    left: 480px;
+    animation: slide 2s;
+}
+
+@keyframes slide{
+    0%{left: 480px;}
+    100%{left: -50px;}
+}
+
+@keyframes jump{
+    0%{top: 270px;}
+    35%{top: 220px;}
+    70%{top: 220px;}
+    100%{top: 270px;}
+}
