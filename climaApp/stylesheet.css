@@ -10,11 +10,54 @@ body{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(180deg, #016AE3, #312aff);
+    font-family: monospace;
+    
 }
+
+/* NAV */
 
 .title{
     color: white;
     text-align: center;
     padding-top: 20px;
     font-size: 3rem;
+    height: 10vh;
 }
+
+/* CONTENEDOR */
+
+.container{
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 40vh 40vh;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid red;
+}
+
+/* DISPLAY DE INFORMACION */
+
+.location, .temperature, .input, .browser{
+    align-self: center;
+    justify-self: center;
+}
+
+.degree, .icon, .timeZoneLocation, .description, .degreeType{
+    display: flex;
+    justify-content: center;
+    padding: 20px 2px 20px 0;
+    color: white
+}
+
+.degree, .timeZoneLocation{
+    font-size: 2.5rem;
+}
+
+.description{
+    font-size: 1rem;
+}
+
+
+/* BOTONES E INPUT */
+
